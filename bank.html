@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Globo Bank
+                <img src="assets/images/erf.png", class="header_img">
+            </h1>
+            <div>
+                <button type="button" class="collapsible">Invest</button>
+                <button type="button" class="collapsible">Digest</button>
+                <button type="button" class="collapsible">Regress</button>
+                <button type="button" class="login" id="login">Login</button>
+                </div>
+                <div class="expanded">
+                    <p>Company</p>
+                    <p>Private</p>
+                </div>
+                <div class="expanded">
+                    <p>Stuff</p>
+                </div>
+                <div class="expanded">
+                    <p>Things</p>
+            </div>
+            
+        </header>
+
+
+
+        <!-- PAGE CONTENT -->
+        <main>
+            <div class="main" id="bank_state">
+                
+                <div id="myModal" class="modal">
+                    <div id="modal_content" class="modal-content">
+                        <div class="modal-header">
+                            <!-- <span class="close">&times;</span> -->
+                            <h2>Terms Of Service</h2>
+                        </div>
+                        <div class="modal-text">
+                            <p>In order to continue using GloboBank you must agree to our new terms of service. Please read every single word before accepting, or don't we don't actually really care.</p>
+                            <ul id="tos_list" style="line-height:120%;">
+                                <!-- Dynamically Generated -->
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <div id="modal_buttons">
+                                <button type="button" id="deny_button" class="login">Deny</button>
+                                <span>   </span>
+                                <button type="button" id="accept_button" class="login">Accept</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <div>
+                    <div class="row">
+                    <div class="column">
+                        <div class="content">
+                        <img src="assets/images/erf.png" alt="..." style="width:100%">
+                        <h3>Planetary Domination</h3>
+                        <p>This is where you live. But we own it.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                        <img src="assets/images/linegoup.png" alt="Lights" style="width:100%">
+                        <h3>Exponential</h3>
+                        <p>Our custom linegoupper is better than our competitors</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                        <img src="assets/images/monee.png" alt="Nature" style="width:100%">
+                        <h3>Spectral Investing</h3>
+                        <p>Some financial mumbo jumbo probably</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                        <img src="assets/images/momonee.png" alt="Mountains" style="width:100%">
+                        <h3>Some Thing</h3>
+                        <p>Just give us da mooooooneeeeees please</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="content">
+                        <img src="assets/images/peoplepapers.jpg" alt="Bear" style="width:100%">
+                        <h3 style="text-align: center;">So Bank Much Money</h3>
+                        <p>We are so bank that you should call us BANKSY whoooooooaaaaa. But seriously give us your money here and we will do stuff with it. What stuff? Don't mind your pretty little head about that and check out our premium line go up service.</p>
+                        <button type="button" class="login" style="position:relative; left:43%;">Don't Push</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        
+
+        <footer>
+            <p>©Copyright 2050 GloboBank. All your rights reversed.</p>
+        </footer>
+
+    </body>
+    <script src="logic.js"></script>
+</html>
