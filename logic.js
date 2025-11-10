@@ -16,7 +16,7 @@ const TOS_TEXT = [
 
     "If you have any questions please contact our armed persuasive enforcement team that will visit you shortly to clarify any misunderstandings.",
 
-    "I hereby renegg all standard legal remedies and agree that all disputes will be settled in the Dome of Dispute in the state of Delaware where I will fight other dissatisfied customers to the death in order to make a 30 second plea to an AI judge that upon dismissing my case will open a secret door to a fiery cavern beneath my feet where I will plummet to my imminent (but slow) death.",
+    "I hereby renege all standard legal remedies and agree that all disputes will be settled in the Dome of Dispute in the state of Delaware where I will fight other dissatisfied customers to the death in order to make a 30 second plea to an AI judge that upon dismissing my case will open a secret door to a fiery cavern beneath my feet where I will plummet to my imminent (but slow) death.",
 
     "Our blood-thirst dominion over the world is our civic duty to reorganise the known universe in a way that aligns with our shareholders interests, what you are you an evil socialist or something? That’s what we thought now bow to the one true God: Capitalism (Capitalism is hereby defined as everything that only benefits us and harms you, so don’t get smart with us economists)",
 
@@ -46,7 +46,8 @@ function setupBankState(){
     //------------------------ Modal ---------------------------
     const modal = document.getElementById("myModal");
     const loginBttn = document.getElementById("login");
-    loginBttn.style.left = "30%";
+    if(window.innerWidth > 450) loginBttn.style.left = "25%";
+    else loginBttn.style.float = "right";
 
     //const span = document.getElementsByClassName("close")[0];
 
