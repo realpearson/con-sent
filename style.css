@@ -12,11 +12,48 @@ body {
 }
 
 header {
-  padding-left: 20px;
-  box-shadow: inset 0px 33px 0px 0 #f8f6f6, 
-          inset 0 66px 15px 0px #f4f2f2,
+  width: 100%;
+  box-shadow: inset 0px 33px 0px 0 #f4f5f6, 
+          inset 0 66px 15px 0px #f4f5f6,
           inset 0 320px 5px 0px #e5e2e2;
 
+}
+
+hr {
+  border: 2px solid black;
+}
+
+a:link, a:visited {
+  color: rgb(108, 15, 155);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  text-emphasis-color: rgb(3, 207, 255)
+}
+
+table {
+  border-collapse: collapse;
+  border: 10px solid rgb(230, 230, 233);
+  font-family: sans-serif;
+  font-size: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  /*letter-spacing: 1px;*/
+}
+
+thead,
+tfoot {
+  font-size: 2rem;
+  color: rgb(0, 51, 160);
+  /*background-color: rgb(228 240 245);*/
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
 }
 
 ul {
@@ -25,7 +62,7 @@ ul {
 }
 
 ul li {
-  background: rgb(217, 214, 214);
+  /*background: rgb(217, 214, 214);*/
   color: darkblue;
   margin: 10px;
 }
@@ -41,7 +78,7 @@ h1 {
   word-break: break-all;
   text-align: center;
   background: #1e1e1e;
-  padding-left: 4%;
+  /*padding-left: 4%;*/
   padding-right: 4%;
   /*background: linear-gradient(to right, #030035 0%, #021af0 100%);*/
   -webkit-background-clip: text;
@@ -50,8 +87,7 @@ h1 {
 
 .header_img {
   position: relative;
-  left: 10%;
-  width:5%;
+  width:100%;
   height:auto;
 }
 
@@ -85,6 +121,9 @@ h1 {
   background-color: rgb(230, 230, 233);
   padding: 10px;
   border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0, 51, 160);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -113,7 +152,7 @@ h1 {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 20%;
   border: 2px;
   text-align: center;
@@ -262,3 +301,8 @@ h1 {
   to {top: 0; opacity: 1}
 }
 
+
+
+.kidnapmain {
+  background-color: #0dbece;
+}

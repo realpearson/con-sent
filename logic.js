@@ -46,7 +46,7 @@ function setupBankState(){
     //------------------------ Modal ---------------------------
     const modal = document.getElementById("myModal");
     const loginBttn = document.getElementById("login");
-    loginBttn.style.cssFloat = "right";
+    loginBttn.style.left = "30%";
 
     //const span = document.getElementsByClassName("close")[0];
 
@@ -56,6 +56,11 @@ function setupBankState(){
         SetupDarkPattern();
     });
 
+    const dontPush = document.getElementById("dontpush");
+    dontPush.addEventListener("pointerdown", () => {
+        modal.style.display = "block";
+        SetupDarkPattern();
+    });
 
     /*
     //CLOSE MODAL LOGIC
@@ -165,6 +170,12 @@ function setupBankState(){
     const darkPatterns = [buttonVanishMouseOver, buttonVanishClick, buttonSwitch, mouseFollow, mouseRepell];
 
     function SetupDarkPattern(){
+        const darkPatterns = [buttonVanishMouseOver, buttonVanishClick, buttonSwitch, mouseFollow, mouseRepell];
+        if(window.innerWidth <= 450) {
+            darkPatterns.length = 0;
+            darkPatterns.push(buttonVanishClick);
+            darkPatterns.push(buttonSwitch);
+        }
         const modalBttns = document.getElementById("modal_buttons");
         modalBttns.style.position = "relative";
         modalBttns.style.left = "38%";
@@ -199,6 +210,7 @@ function setupBankState(){
 
 function setupKidnapState(){
     console.log("kidnap_state");
+    //Instantiate popups...
 }
 
 function setupAudienceState(){
