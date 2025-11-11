@@ -236,6 +236,7 @@ function setupAudienceState(){
 
     function spawnGlitch(){
         document.body.style.backgroundImage = "url('/assets/images/glitch.png')";
+        document.body.style.backgroundPosition = "1050% 2000%";
         setTimeout(clearGlitch, 10);
     }
 
