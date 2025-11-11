@@ -129,14 +129,17 @@ function setupBankState(){
     function mouseFollow(){
         //Accept Follows Mouse
         const acceptBttn = document.getElementById("accept_button");
+        document.body.appendChild(acceptBttn);
         const modal =  document.getElementById("modal_content");
+        modal.addEventListener("pointerenter", () => {document.body.appendChild(acceptBttn);});
         modal.addEventListener("pointermove", (e) => {
+            
             acceptBttn.style.position = "absolute";
             
             const rect = modal.getBoundingClientRect();
             console.log(rect.bottom);
-            acceptBttn.style.left = (e.clientX-rect.left*4.8)+ "px";
-            acceptBttn.style.top = (e.clientY-rect.bottom + 20) + "px";
+            acceptBttn.style.left = (e.clientX-15)+ "px";
+            acceptBttn.style.top = (e.clientY-15) + "px";
             acceptBttn.style.zIndex = 1;
         })
     }
