@@ -173,7 +173,7 @@ function setupBankState(){
 
     function SetupDarkPattern(){
         const darkPatterns = [buttonVanishMouseOver, buttonVanishClick, buttonSwitch, mouseFollow, mouseRepell];
-        if(window.innerWidth <= 450) {
+        if(window.innerWidth <= 600) {
             darkPatterns.length = 0;
             darkPatterns.push(buttonVanishClick);
             darkPatterns.push(buttonSwitch);
