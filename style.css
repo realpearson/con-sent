@@ -184,7 +184,7 @@ h1 {
   height: 20%;
   position: relative;
   left: 20%;
-  background-color: #485fc7;
+  background-color: rgb(0, 51, 160);
   color: rgb(238, 235, 235);
   font-size: 2rem;
   cursor: pointer;

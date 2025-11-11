@@ -84,7 +84,7 @@ function setupBankState(){
     const ulElement = document.getElementById("tos_list");
 
     for(let i = 0; i < numTerms; i++){
-        const ind = Math.floor(Math.random() * (TOS_TEXT.length-1));
+        const ind = Math.floor(Math.random() * (TOS_TEXT.length));
 
         const liItem = document.createElement("li");
         liItem.appendChild(document.createTextNode(TOS_TEXT.splice(ind, 1)[0]));
@@ -168,8 +168,6 @@ function setupBankState(){
     }
 
 
-    const darkPatterns = [buttonVanishMouseOver, buttonVanishClick, buttonSwitch, mouseFollow, mouseRepell];
-
     function SetupDarkPattern(){
         const darkPatterns = [buttonVanishMouseOver, buttonVanishClick, buttonSwitch, mouseFollow, mouseRepell];
         if(window.innerWidth <= 450) {
@@ -212,10 +210,41 @@ function setupBankState(){
 function setupKidnapState(){
     console.log("kidnap_state");
     //Instantiate popups...
+    const view = document.getElementById("kidnap_state");
+    
+    function moveSpawn(e){
+        if(Math.random() < 0.95) return;
+        const img = document.createElement("img");
+        img.src = "assets/images/Popup Window.png";
+        img.style.position = "absolute";
+        img.style.left = e.clientX + "px";
+        img.style.top = e.clientY + "px";
+        img.style.width = "50%";
+        view.appendChild(img);
+
+    }
+
+    view.addEventListener("pointermove", moveSpawn);
+    view.addEventListener("drag", moveSpawn);
 }
 
 function setupAudienceState(){
     console.log("audience_state");
+    //Instantiate glitch logic
+    
+    let elt;
+
+    function spawnGlitch(){
+        document.body.style.backgroundImage = "url('/assets/images/glitch.png')";
+        setTimeout(clearGlitch, 10);
+    }
+
+    function clearGlitch(){
+        document.body.style.backgroundImage = "none";
+        setTimeout(spawnGlitch, Math.random()*1000);
+    }
+
+    spawnGlitch();
 }
 
 
